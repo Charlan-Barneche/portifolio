@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&family=Ropa+Sans&family=Work+Sans:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color:#0C0C0C;
+
+}
+
+.all-sites{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+img{
+    margin-top: 25px;
+    width: auto;
+    height: auto;
+    max-width: 227px;
+    border-radius: 20px;
+}
+
+.site-exemplo{
+    transition: all 0.5s;
+}
+
+.site-exemplo:hover{
+    transition: all 0.5s;
+    transform: scale(0.9);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    align-items:center;
+}
+
+.botao-home{
+    font-size: 20px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(124, 11, 11);
+    transition: transform 1.0s;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+
+    
+}
+.botao-home:hover{
+    background-color: rgb(173, 6, 6);
+    transition: background 0.5s;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    box-shadow: 0 0 100px rgba(255, 0, 0, 0.87);
+
+}
+
+.botao-home:active{
+    transition: transform 1.0s;
+    transition-delay: 5.0s;
+    transform: translate(0px, 150px)
+
+}
