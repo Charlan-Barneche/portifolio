@@ -8,15 +8,28 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color:#0C0C0C;
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
 }
 
 .foto-e-texto{
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
+
 }
 
 
@@ -25,35 +38,40 @@
     display: flex;
     flex-direction:column;
     align-items: flex-start;
+    max-width: 400px;
+    max-height: 506px;
+    margin: 30px;
 }
 
 .perfil{
     box-shadow: -3px 5px 20px 5px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items:flex-start;
-    margin-left: 150px;
-    max-width: 458px;
-    max-height: 506px;
-    width:auto;
-    height: auto;
+    width: 100%;
+    
     border-radius: 40px;
+
 
 }
 
+.principal-text{
+    max-width: 368px;
+    margin: 0 auto
+}
 
 .descricao{
-    margin-top: 17px;
-    margin-left: 175px;
-    margin-right: 0px;
     font-family: 'Ropa Sans', sans-serif;
     display: flex;
     flex-direction:column;
+    justify-content: center;
     align-items: flex-start;
+    margin: 0 auto;
 }
 
 .arroba{
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
+    margin: 10px;
     transition: all 0.2s;
 
 }
@@ -66,6 +84,7 @@
 .descricao-redes{
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 
@@ -73,59 +92,24 @@
 .redes{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 0px;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
     transition-duration: 1.0s;
+    max-width: 130px;
+    margin: auto;
 }   
 
 .redes:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition-duration: 1.0s;
 }
 
-
-.face{
-    margin-top: 15px;
-    margin-left: 5px;
+.rede-social{
     max-width: 40px;
-    max-height: auto;
-    width:auto;
-    height: auto;
-    transition: all 0.3s;    
-}
-.face:hover{
-    transform: scale(1.2);
-    transition: all 0.3s;
-
-}
-
-.insta{
-    margin-top: 15px;
-    margin-left: 5px;
-    max-width: 40px;
-    max-height: auto;
-    width:auto;
-    height: auto;
     transition: all 0.3s;
 }
-.insta:hover{
-    transform: scale(1.2);
-    transition: all 0.3s;
-}
-
-.whats{
-    margin-top: 15px;
-    margin-left: 5px;
-    max-width: 40px;
-    max-height: auto;
-    width:auto;
-    height: auto;
-    transition: all 0.3s;
-}
-.whats:hover{
-    transform: scale(1.2);
+.rede-social:hover{
+    transform: scale(1.1);
     transition: all 0.3s;
 }
 
@@ -136,38 +120,42 @@
 
 
 .apresentacao{
-    margin-left: 40px;
-    margin-top: 0px;
-    margin-right: 0px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 406px;
+
 }
 
 .apresentacao-titulo{
     color: #fff;
-    font-size: 45px;
+    font-size: clamp(1em, 1em + 2.5vw, 3em);
     font-family: 'Fira Sans', sans-serif;
 }
 
 .apresentacao-texto{
-    margin-top: 15px;
-    margin-left: 10px;
+    margin: 10px 30px;
     max-width: 700px;
     max-height: 500px;
     font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
     color: #fff;
+    text-align: center;
 }
 
 .texto-e-botao{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 
 .botao{
     margin-top: 45px;
-    margin-left: 50px;
     padding: 25px;
     border: none;
     border-radius: 25px;
@@ -175,7 +163,7 @@
     cursor: pointer;
     font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
-    background-color: rgb(124, 11, 11);
+    background-color: #3a004b;
     transition: background 1.0s;
     transition-property: box-shadow;
     transition-duration: 0.8s;
@@ -183,22 +171,17 @@
     
 }
 .botao:hover{
-    background-color: rgb(173, 6, 6);
+    background-color: #3a004b;
     transition: background 0.5s;
     transition-property: box-shadow;
     transition-duration: 0.5s;
-    box-shadow: 0 0 70px rgba(255, 0, 0, 0.87);
+    box-shadow: 0 0 30px #a200d3;
 }
 
 .botao:active{
-    box-shadow: 0 0 100px rgba(255, 0, 0, 0.705);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 100px #a200d3;
+    text-shadow: 0 0 10px #745c7b;
     transition: text-shadow 0.5s;
     transition: box-shadow 2.0s;
 }
 
-
-body{
-    background-color:#0C0C0C;
-
-}
